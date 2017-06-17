@@ -17,12 +17,16 @@
   },
   "homepage": "https://github.com/VerDan777/WebAdvanced2017#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-notify": "^3.0.0",
     "gulp-pug": "^3.3.0",
+    "gulp-pug2": "0.0.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-watch": "^4.3.11"

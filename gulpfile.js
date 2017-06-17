@@ -2,10 +2,10 @@
 
 global.$ = {
     package:require('./package.json'),
-    config: require('./config.js'),
+    config: require('./gulp/config'),
 
     path: {
-        task:require('./gulp/tasks/task.js'),
+        task:require('./gulp/path/tasks.js'),
         app: require('./gulp/path/app.js')
     },
     gulp:require('gulp'),
@@ -15,21 +15,21 @@ global.$ = {
 };
 
 
-    $.path.task.forEach(function(taskPath) {
-        return (taskPath)();
-    });
+  $.path.task.forEach(function(taskPath) {
+  require(taskPath)();
+});
 
 $.gulp.task('default',$.gulp.series(
     'clean',
     $.gulp.parallel(
         'sass',
         'pug',
-        'js',
-        'copyImg',
+        // 'js',
+        'copyImg'
         
     ),
     $.gulp.parallel(
-        'watch',
+        // 'watch',
         'serve'
     )  
 ))
