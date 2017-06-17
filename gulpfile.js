@@ -24,12 +24,12 @@ $.gulp.task('default',$.gulp.series(
     $.gulp.parallel(
         'sass',
         'pug',
-        // 'js',
+        'js',
         'copyImg'
         
     ),
     $.gulp.parallel(
-        // 'watch',
+        'watch',
         'serve'
     )  
 ))

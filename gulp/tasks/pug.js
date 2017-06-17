@@ -2,7 +2,7 @@
 
 module.exports = function() {
   $.gulp.task('pug', function() {
-    return $.gulp.src('/.src/*.pug')
+    return $.gulp.src('./src/*.pug')
       .pipe($.gp.pug({ pretty: true }))
       .on('error', $.gp.notify.onError(function(error) {
     return {
