@@ -25,7 +25,9 @@ $.gulp.task('default',$.gulp.series(
         'sass',
         'pug',
         'js',
-        'copyImg'
+        'copyImg',
+        'sprite:svg',
+        'copyFonts'
         
     ),
     $.gulp.parallel(
