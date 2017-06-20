@@ -4,6 +4,25 @@ head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="./css/styles.css")
     title Document
 body
-    h1 test
+    header.site-header
+        nav.main-nav
+            .main-nav__social
+                a(href="#" target="_blank")
+                    img(src="./img/vk.svg").main-nav-social--vk    
+                a(href="#" target="_blank")
+                   img.main-nav-social--github(src="./img/github.svg")
+                a(href="#" target="_blank")
+                    img.main-nav-social--in(src="./img/in.svg")
+        nav.main-menu
+            img(src="./img/hamburger.svg").main-menu__menu
+        article.main-nav__aboutme: .wrapper
+            img(src="./img/i.svg").main-nav__me
+            h1.main-nav__aboutme__title Даниил Верещагин
+            h3.main-nav__aboutme__subtitle Личный сайт вебразработчик
+
+                        
+    
+             
