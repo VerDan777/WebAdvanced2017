@@ -1,0 +1,29 @@
+.school {
+
+    background-color: #f2f0e8;
+    width: 50%;
+    height: 750px;
+    position: relative;
+
+
+    &__site{
+
+        &__info {
+        
+            text-align: center;   
+            padding:50% 0;
+            
+        }
+        &__title {
+            color:#474b57;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+             
+
+
+        }
+
+
+    }
+}
