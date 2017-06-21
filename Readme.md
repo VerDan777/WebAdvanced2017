@@ -1,5 +1,4 @@
-Верещагин Даниил Андреевич 
+Vereschagin Daniil
 
-Настроил сборку проекта 
+ Markup and styling
 
-Создал 2 таска для генерации спрайтов(sprite:svg) и  для копирование картинок, шрифтов(copyImg,copyFonts)
