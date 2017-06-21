@@ -2,12 +2,12 @@
 
 module.exports = function() {
   $.gulp.task('sprite:svg', function() {
-    return $.gulp.src($.config.src +'/sprite/*.svg')
-      .pipe($.gp.svgmin({
-        js2svg: {
-          pretty: true
-        }
-      }))
+    return $.gulp.src($.config.src + '/img/*.svg')
+      // .pipe($.gp.svgmin({
+      //   js2svg: {
+      //     pretty: true
+      //   }x
+      // }))
       .pipe($.gp.cheerio({
         run: function ($) {
           $('[fill]').removeAttr('fill');
@@ -24,6 +24,6 @@ module.exports = function() {
           }
         }
       }))
-      .pipe($.gulp.dest($.config.root + '/img'))
-  })
+      .pipe($.gulp.dest($.config.root + '/img'));
+  });
 };

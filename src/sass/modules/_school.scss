@@ -21,8 +21,17 @@
             font-weight: bold;
              
 
-
+            &::after {
+                content: '';
+                border:1px solid #9c9d9f;
+       
+                
+            }
         }
+        &__subtitle {
+            color: #083c96;
+        }
+        
 
 
     }

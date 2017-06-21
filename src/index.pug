@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 html(lang="en")
 head
@@ -10,12 +11,12 @@ body
     header.site-header
         nav.main-nav    
             .main-nav__social
-                a(href="#" target="_blank")
-                    img(src="./img/vk.svg").main-nav-social--vk    
-                a(href="#" target="_blank")
-                   img.main-nav-social--github(src="./img/github.svg")
-                a(href="#" target="_blank")
-                    img.main-nav-social--in(src="./img/in.svg")
+                -var arrimg = ['./img/vk.svg','./img/github.svg','./img/in.svg']
+                -var arrclass = ['vk','github','in']
+                - for(var i=0;i<=2;i++)  
+                    a(href="#" target="_blank")
+                            img(src=arrimg[i] class=`main-nav__social--${arrclass[i]}`)
+                 
         nav.main-menu
             img(src="./img/hamburger.svg").main-menu__menu
         article.main-nav__aboutme: .wrapper
@@ -35,7 +36,8 @@ body
 
         section.school__preview
             article.school__preview
-        
+                
+                
 
                         
     

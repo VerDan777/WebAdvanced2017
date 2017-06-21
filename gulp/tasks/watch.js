@@ -8,5 +8,6 @@ module.exports  = function () {
         $.gulp.watch($.config.src + '/img/*.*',$.gulp.series('copyImg'))
         $.gulp.watch($.config.src + '/font/*.*',$.gulp.series('copyFonts'))
         $.gulp.watch($.config.src + '/sprite/*.svg',$.gulp.series('sprite:svg'))
+        $.gulp.watch($.config.src + '/content/*.json',$.gulp.series('copyContent'))
     })
 }

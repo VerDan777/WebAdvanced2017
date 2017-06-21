@@ -10,6 +10,7 @@ global.$ = {
     },
     gulp:require('gulp'),
     del:require('del'),
+    fs:require('fs'),
     browserSync:require('browser-sync').create(),
     gp:require('gulp-load-plugins')()
 };
@@ -27,7 +28,8 @@ $.gulp.task('default',$.gulp.series(
         'js',
         'copyImg',
         'sprite:svg',
-        'copyFonts'
+        'copyFonts',
+        'copyContent'
         
     ),
     $.gulp.parallel(
