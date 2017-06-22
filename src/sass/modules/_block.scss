@@ -2,13 +2,22 @@
 
     &__title {
 
-     color:$white;
+        color:$white;
         font-size: 2rem;
         text-transform: uppercase;
         z-index: 2; 
         position: absolute;
         top:85%;
         left:42%;
-    
+        
+        &--about {
+            position: absolute;
+            top:0;
+           text-align: center;
+           
+            
+        }
     }
+
+    
 }

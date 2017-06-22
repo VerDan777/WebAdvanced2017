@@ -24,7 +24,7 @@ body
             h1.main-nav__aboutme__title Даниил Верещагин
             h3.main-nav__aboutme__subtitle Личный сайт вебразработчик
         h1.block__title Мои Работы   
-        img(src="./img/stars2.svg").main-nav__star
+        img(src="./img/stars2.svg").star__img
         img(src="./img/bg.svg").main-nav__bg
     main.school
         section.school__site
@@ -43,9 +43,29 @@ body
                     //- img(src="./img/itloft.png")
         
     section.about: .wrapper
-        h1.block__title Обо мне
-        img(src="./img/stars1.svg").main-nav__star
-    
+        h1.block__title.block__title--about Что обо мне <br>говорят
+        img(src="./img/stars3.svg").star__img--about
+        .blockquote-container
+            mixin info(imgURL,imgsubURL,text,quote)
+
+                .blockquote-left
+
+                        img(src=imgURL, alt="").blockquote-left__img-kdn
+                        img(src=imgsubURL).blockquote-left__subimg
+                        blockquote.blockquote-left__expression text
+                        blockquote.blockquote-left__quote quote
+
+
+                .blockquote-right
+
+                        img(src=imgURL, alt="").blockquote-right__img-sab
+                        img(src=imgsubURL).blockquote-right__subimg
+                        blockquote.blockquote-right__expression text
+                        blockquote.blockquote-right__quote quote
+
+            +info('./img/kdn.png','./img/','тот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!','лучшее wokflow!')
+            +info('./img/sab.png','./img/..', 'тот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!','Верстка выдержит все')
+            
        
             
 
