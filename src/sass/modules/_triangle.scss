@@ -1,0 +1,14 @@
+.triangle {
+
+
+    width:100%;
+    fill:beige;
+    position: absolute;
+    bottom: 100%;
+  
+    &__svg {
+        height: 100%;
+        width: 100%;
+        fill:inherit;
+    }
+}   

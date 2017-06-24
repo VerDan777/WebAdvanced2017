@@ -4,4 +4,30 @@
     height: 1400px;
     width: 100%;
     background-repeat:no-repeat; 
+    background-color: beige;
+
+    &-left {
+        
+        position: relative;
+        width: 50%;
+        float: left;
+
+    }
+    &-right {
+        position: relative;
+        width: 50%;
+        float: left;
+        
+        &__description {
+
+            margin-left:40px;
+            margin-right: 100px;
+
+        }
+
+    }
+
+
+
+
 }

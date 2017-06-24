@@ -8,157 +8,55 @@
   <title>Document</title>
 </head>
 <body>
-  <header class="section hero">
-    <div class="hero__bg"> <img class="hero__bg-img" src="./img/bg1.jpg" alt=""/>
-      <div class="hero__wrapper">
-        <div class="hero__socials">
-          <ul class="socials">
-            <li class="socials__item"><a class="socials__link" href="vk"> </a></li>
-            <li class="socials__item"><a class="socials__link" href="github"> </a></li>
-            <li class="socials__item"><a class="socials__link" href="in"> </a></li>
-          </ul>
-        </div>
-        <div class="hamburger hero__menu"></div>
-        <div class="user__icon"> 
-          <div class="user__avatar"></div>
-        </div>
-        <div class="user__title">Владимир Астахов</div>
-        <div class="user__suptitle">Личный сайт веб разработчика</div>
-        <div class="arrow hero-scroll-button arrow-button-pic">
-          <svg class="arrow-down-pic"> 
-            <use x-link:href="./img/sprite.svg#arrow-down"></use>
-          </svg>
-        </div>
-        <div class="hero__title">
-          <div class="section__title">
-            <svg class="section-title__pic"> 
-              <use x-link:href="./img/sprite.svg#portfoilio-header"></use>
-            </svg>
-          </div>
-        </div>
-      </div>
+  <header class="section site-header">
+    <div class="site-header__socials">
+      <ul class="socials">
+        <li class="socials__item"><a class="socials__link--vk" href="#"><img src="./img/vk.svg"/></a></li>
+        <li class="socials__item"><a class="socials__link--github" href="#"><img src="./img/github.svg"/></a></li>
+        <li class="socials__item"><a class="socials__link--in" href="#"><img src="./img/in.svg"/></a></li>
+      </ul>
+    </div>
+    <div class="main-menu site-header__menu"><img src="./img/hamburger.svg"/></div>
+    <div class="user">
+      <div class="user__icon"><img class="user__avatar"/></div>
+      <h2 class="user__title">Даниил Верещагин</h2>
+      <p class="user__suptitle">Личный сайт веб разработчика</p>
+    </div>
+    <div class="arrow site-header__scroll">
+      <div class="arrow-down-pic"><img src="./img/arrow.png"/></div>
     </div>
   </header>
   <section class="section about">
-    <div class="about__left">
-      <div class="triangle triangle-fill-white triangle-left">
-        <svg class="triangle__svg" viewBox="0 0 1000 150" preserveAspectRatio="none">
-          <polygon points="0,0 0,150 1000,150"></polygon>
-        </svg>
-      </div>
-      <div class="about__left-title"> 
-        <h2 class="block-title">Обо мне</h2>
-      </div>
-      <div class="about__left-content">
-        <div class="user-description">
-          <div class="user-description__image"><img class="user-description__avatar" src="#"/></div>
-          <div class="user-description__title"> 
-            <div class="block-user__suptitle"></div>
-          </div>
-          <div class="user-description__text">
-            <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
-            <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!</p>
-          </div>
+    <div class="triangle triangle--white triangle-left">
+      <svg class="triangle__svg" viewBox="0 0 1000 150" preserveAspectRatio="none">
+        <polygon points="0,0 0,150 1000,150"></polygon>
+      </svg>
+    </div>
+    <div class="about-left">
+      <div class="block__title block__title--weight">Обо мне</div>
+      <div class="user-description"> 
+        <div class="user-description-content"><img class="user-description__avatar" src="./img/i.jpg"/></div>
+        <div class="user-description__title">
+          <div class="block__title block__title--pd50">Кто я  </div>
+        </div>
+        <div class="user-description__text"> 
+          <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
+          <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!</p>
         </div>
       </div>
     </div>
-    <div class="about__right">
-      <div class="triangle triangle-fill-beige about-left-triangle">
-        <svg class="triangle__svg" viewBox="0 0 1000 150" preserveAspectRatio="none">
-          <polygon points="1000,0 1000,150 0,150"></polygon>
-        </svg>
+    <div class="triangle triangle--white triangle-right">
+      <svg class="triangle__svg" viewBox="0 0 1000 150" preserveAspectRatio="none">
+        <polygon points="1000,0 1000,150 0,150"></polygon>
+      </svg>
+    </div>
+    <div class="about-right">
+      <div class="about-right__title">
+        <div class="block__title block__title--right"> Чем я могу быть <br> вам полезен</div>
       </div>
-      <div class="about__right-title">
-        <h2 class="block-title">Чем я могу вам быть полезен</h2>
-      </div>
-      <div class="about__right-description">
-        <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
-      </div>
-      <div class="about__right-content">
-        <ul class="skills-list">
-          <li class="skills-list__item">
-            <div class="skill-row"></div>
-            <div class="skill-row-title">Frontend</div>
-          </li>
-          <ul class="skills-row-list">
-            <li class="skills-row__item">
-              <div class="skill">
-                <svg class="skill__circle"></svg>
-                <div class="skill__title"></div>
-              </div>
-            </li>
-          </ul>
-          <li class="skills-list__item">
-            <div class="skill-row"></div>
-            <div class="skill-row-title">Backend</div>
-          </li>
-          <ul class="skills-row-list">
-            <li class="skills-row__item">
-              <div class="skill">
-                <svg class="skill__circle"></svg>
-                <div class="skill__title"></div>
-              </div>
-            </li>
-          </ul>
-          <li class="skills-list__item">
-            <div class="skill-row"></div>
-            <div class="skill-row-title">Workflow</div>
-          </li>
-          <ul class="skills-row-list">
-            <li class="skills-row__item">
-              <div class="skill">
-                <svg class="skill__circle"></svg>
-                <div class="skill__title"></div>
-              </div>
-            </li>
-          </ul>
-        </ul>
+      <div class="about-right__description">
+        <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать&nbspне сложные задачи Backend. Но давайте по порядку.</p>
       </div>
     </div>
   </section>
-  <section class="section map"> 
-    <div class="google-map"></div>
-    <div class="contacts">
-      <div class="contacts__title">
-        <div class="block-title"> Контакты</div>
-      </div>
-    </div>
-  </section>
-  <footer class="site-footer">
-    <div class="site-footer__wrapper">
-      <div class="site-footer-block">
-        <div class="site-footer__motto">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</div>
-      </div>
-      <div class="site-footer-block">
-        <nav class="site-footer__menu">  
-          <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="Мои работы">Мои работы</a></li>
-            <li class="menu__item"><a class="menu__link" href="Обо мне">Обо мне</a></li>
-            <li class="menu__item"><a class="menu__link" href="Блог">Блог</a></li>
-            <li class="menu__item"><a class="menu__link" href="Авторизация">Авторизация</a></li>
-          </ul>
-        </nav>
-        <div class="site-footer__socials">
-          <ul class="socials socials--rounded">
-            <li class="socials__item"><a class="socials__link" href="vk"> </a></li>
-            <li class="socials__item"><a class="socials__link" href="github"> </a></li>
-            <li class="socials__item"><a class="socials__link" href="in"> </a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="site-footer-block">
-        <article class="site-footer__info">
-          <ul class="contacts__list contacts__list--vert">
-            <li class="socials__item--vert">skype__kdn </li>
-            <li class="socials__item--vert"> astahov@gmail.com</li>
-            <li class="socials__item--vert">+7 931 2009394</li>
-            <li class="socials__item--vert">г.Новосибирск  ул Инская</li>
-          </ul>
-        </article>
-      </div>
-      <div class="site-footer__underfooter">
-        <div class="site-footer__motto">© Владимир Астахов | Создано с любовью LoftSchool 2017</div>
-      </div>
-    </div>
-  </footer>
 </body>
