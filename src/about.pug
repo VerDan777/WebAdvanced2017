@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="./css/styles.css")
+    title Document
+body
+    header.section.hero
+        .hero__bg 
+            img(src="./img/bg1.jpg", alt="").hero__bg-img
+            .hero__wrapper
+                .hero__socials
+                    ul.socials
+                        each item  in ['vk', 'github', 'in']
+                            li.socials__item
+                                a(href=`${item}`).socials__link 
+
+                .hamburger.hero__menu
+
+                .user__icon 
+                    .user__avatar
+                .user__title Владимир Астахов
+                .user__suptitle Личный сайт веб разработчика
+                .arrow.hero-scroll-button.arrow-button-pic
+                    svg.arrow-down-pic 
+                        use(x-link:href="./img/sprite.svg#arrow-down")
+                .hero__title
+                    .section__title
+                        svg.section-title__pic 
+                            use(x-link:href="./img/sprite.svg#portfoilio-header")
+    
+    section.section.about
+        .about__left
+            .triangle.triangle-fill-white.triangle-left
+                svg(viewBox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
+                    polygon(points="0,0 0,150 1000,150")
+            
+            .about__left-title 
+                h2.block-title Обо мне
+
+            .about__left-content
+                .user-description
+                    .user-description__image
+                        img.user-description__avatar(src="#")
+                    .user-description__title 
+                        .block-user__suptitle
+                    .user-description__text
+                         p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                         p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+
+
+        .about__right
+            .triangle.triangle-fill-beige.about-left-triangle
+                svg(viewBox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
+                    polygon(points="1000,0 1000,150 0,150")
+            .about__right-title
+                h2.block-title Чем я могу вам быть полезен
+            
+            .about__right-description
+                p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+            
+            .about__right-content
+                ul.skills-list
+                    each item in ['Frontend', 'Backend', 'Workflow']
+                        li.skills-list__item
+                            .skill-row
+                            .skill-row-title #{item}
+                        ul.skills-row-list
+                            li.skills-row__item
+                               .skill
+                                svg.skill__circle
+                                .skill__title
+    
+    section.section.map 
+        .google-map
+        .contacts
+            .contacts__title
+                .block-title  Контакты
+            
+                //- ul.contacts__list
+                //-  - 
+                //-     var contacts = [
+                //-         ['vk', 'skype_kdn'],
+                //-         ['mail', 'astahov@gmail.com'],
+                //-         ['phone', '+7 931 200 93 24'],
+                //-     ]
+
+                //-     each item in contacts
+                //-         li.contacts__item.contact-row
+                //-             .contact-row__icon #{item[0]}
+                            .contact-row__content #{item[1]}
+    
+    footer.site-footer
+        .site-footer__wrapper
+            .site-footer-block
+                .site-footer__motto Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+
+            .site-footer-block
+                nav.site-footer__menu   
+                     ul.menu
+                        each item in ['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
+                            li.menu__item: a(href=`${item}`).menu__link #{item}
+                .site-footer__socials
+                    ul.socials.socials--rounded
+                        each item  in ['vk', 'github', 'in']
+                            li.socials__item
+                                a(href=`${item}`).socials__link 
+
+            .site-footer-block
+
+                article.site-footer__info
+                    ul.contacts__list.contacts__list--vert
+                        li.socials__item--vert skype__kdn 
+                        li.socials__item--vert  astahov@gmail.com
+                        li.socials__item--vert +7 931 2009394
+                        li.socials__item--vert г.Новосибирск  ул Инская
+            
+            .site-footer__underfooter
+                .site-footer__motto © Владимир Астахов | Создано с любовью LoftSchool 2017
+            
+            
+                   
+                    
+                
+
+
+                        
+
+                                    
+
+
