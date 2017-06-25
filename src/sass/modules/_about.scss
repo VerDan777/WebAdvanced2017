@@ -6,15 +6,27 @@
     background-repeat:no-repeat; 
     background-color: beige;
 
+    &--white {
+        background: #faf8f0;
+    }
+
     &__list {
             display: block;
             font-family: 'Roboto',sans-serif;
             color:#848e91;
             padding:0px 50px;
+            float:left;
+         
+         
     }
     &__item {
         // display: block;
         padding-bottom: 40px;
+        // display: inline-block;
+        &:hover {
+            border-right: 1px solid #0548be;
+            height: 40px;
+        }
     }
     &__link {
 

@@ -65,6 +65,34 @@ body
 
             +info('./img/kdn.png','./img/','тот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!','лучшее wokflow!')
             +info('./img/sab.png','./img/..', 'тот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!','Верстка выдержит все')
+    footer.site-footer
+        .site-footer__block
+            h2.site-footer__motto Этот сайт я сделал в рамках обучения в Школе <br>онлайн образования LoftSchool. 
+
+        .site-footer__block
+            nav.site-footer__menu
+         
+                ul.main-menu
+                   -var menuitems= ['Мои работы', 'Обо мне','Блог', 'Авторизация'];
+                   -var menuLinks = ['#','#','#', '#'];
+                   -for (var i=0;i<4;i++)
+                        li.main-menu__item: a.main-menu__link(href=menuLinks[i])=menuitems[i]
+
+            .site-footer__social 
+                 ul.socials.socials--footer
+                    li.socials__item: a(href="#").socials__link--vk: img(src="./img/vk.svg")
+                    li.socials__item: a(href="#").socials__link--github: img(src="./img/github.svg")
+                    li.socials__item: a(href="#").socials__link--in: img(src="./img/in.svg")
+        .site-footer__block
+            .site-footer__contacts
+                ul.contacts__list.contacts__list--footer
+                    li.contacts__item.contacts__item--block skype__kdn
+                    li.contacts__item.contacts__item--block astakhov@gmail.com
+                    li.contacts__item.contacts__item--block +7(952)-796-11-99
+                    li.contacts__item.contacts__item--block г. Калининград 
+
+        .site-footer__underfooter
+            h1.site-footer__underfootermotto © Владимир Астахов | с любовью LoftSchool | 2017
 
        
             
