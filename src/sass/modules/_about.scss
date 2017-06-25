@@ -6,6 +6,25 @@
     background-repeat:no-repeat; 
     background-color: beige;
 
+    &__list {
+            display: block;
+            font-family: 'Roboto',sans-serif;
+            color:#848e91;
+            padding:0px 50px;
+    }
+    &__item {
+        // display: block;
+        padding-bottom: 40px;
+    }
+    &__link {
+
+        &:hover {
+            color:#0548be;
+            transition: 0.5s ease-in-out;
+        }
+        
+    }
+
     &-left {
         
         position: relative;

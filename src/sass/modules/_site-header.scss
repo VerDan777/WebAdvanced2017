@@ -4,9 +4,12 @@
     background-origin: cover;;
     background-repeat: repeat-x ;
     width: 100%;
-    height: 698px;
+    height: 658px;
     // box-shadow: 0 0 1px 1px black;
+    &--blog {
+    height: 400px;
 
+    }
     &__socials {
         position: absolute;
         top:30px;

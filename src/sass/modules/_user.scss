@@ -9,4 +9,18 @@
     color:white;
     font-family: 'Roboto',sans-serif;
 
+    &--blog {
+        top:130px;
+    }
+
+    &__title {
+
+        &--weight {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 3rem;
+
+        }
+    }
+
 }
