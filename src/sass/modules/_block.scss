@@ -8,26 +8,18 @@
         text-transform: uppercase;
         text-align: center;
         position: relative;
+          font-family: 'SansusWebsimmo',sans-serif;
 
-        &::before {
+        // &::before {
 
-            content: '';
-            position: absolute;
-            top:30px;
-            border:1px solid red;
-            width: 80px;
-            height: 15px;
-        }
+        //     content: '';
+        //     position: absolute;
+        //     top:30px;
+        //     border:1px solid red;
+        //     width: 80px;
+        //     height: 15px;
+        // }
 
-        // z-index: 2; 
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-
-        // position: absolute;
-        // bottom: 10%;
-        // left:50%;
-        // transform: translateX(-50%);
         &--pd50 {
             padding-top:50px;
         }
@@ -51,6 +43,14 @@
             padding-bottom: 50px;
         }
        
+    }
+    &__suptitle {
+        color:#474b57;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding:50px 0;
+        font-family: 'SansusWebsimmo',sans-serif;
     }
 
     

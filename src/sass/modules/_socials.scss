@@ -1,9 +1,15 @@
 .socials {
 
+    padding-top:30px;
+    padding-left: 30px;
+
+    &--footer {
+        padding:0;
+    }
 
     &__item {
 
-    padding-left:30px;
+    padding-right:30px;
     display: inline-block;
 
     }

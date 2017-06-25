@@ -6,4 +6,22 @@
         top:30px;
         right:30px;
     }
+    &__link {
+
+
+    }
+        &__item {
+
+        display: inline-block;
+        padding-right:50px;
+        padding-bottom:35px;
+
+    }
+
+    &__link {
+        text-decoration: none;
+        color:white;
+        font-weight: 100;
+        font-family: 'Roboto',sans-serif;
+    }
 }

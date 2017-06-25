@@ -3,6 +3,7 @@
 @import 'base/globals';
 @import 'font/Roboto';
 @import 'font/Sansus';
+@import 'font/font';
 @import 'font/FontAwesome';
 @import 'modules/site-header';
 @import 'modules/wrapper';
@@ -22,3 +23,7 @@
 @import 'modules/user-description';
 @import 'modules/skills';
 @import 'modules/skill';
+@import 'modules/site-footer';
+@import 'modules/contacts';
+@import 'modules/google-map';
+@import 'modules/map';
