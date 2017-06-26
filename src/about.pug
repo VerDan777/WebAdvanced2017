@@ -8,7 +8,7 @@ head
     link(rel="stylesheet", href="./css/styles.css")
     title Document
 body
-    header.section.site-header
+    header.section.site-header.site-header--about
 
             .site-header__socials
                         ul.socials
@@ -19,9 +19,9 @@ body
 
             .main-menu.site-header__menu: img(src="./img/hamburger.svg")
 
-            .user
+            .user.user--about
                 .user__icon
-                        img.user__avatar
+                        img.user__avatar(src="./img/avatar.jpg")
                 h2.user__title Даниил Верещагин
                 p.user__suptitle Личный сайт веб разработчика
             
@@ -39,7 +39,7 @@ body
                     .user-description-content
                         img(src="./img/i.jpg").user-description__avatar
                     .user-description__title
-                        .block__title.block__title--pd50 Кто я  
+                        .block__title.block__title--pd50.block__title--line Кто я  
                     .user-description__text 
                         p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
                         p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
@@ -53,7 +53,7 @@ body
             .about-right
                 .about-right__wrapper 
                     .about-right__title
-                        h2.block__title.block__title--right  Чем я могу быть <br> вам полезен
+                        h2.block__title.block__title--right.block__title--line.block__title--line-use  Чем я могу быть <br> вам полезен
                 
                     .about-right__description
                         p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать&nbspне сложные задачи Backend. Но давайте по порядку.
@@ -91,15 +91,15 @@ body
          
                 ul.main-menu
                    -var menuitems= ['Мои работы', 'Обо мне','Блог', 'Авторизация'];
-                   -var menuLinks = ['works.html','about.html','blog.html', 'welcome.html'];
+                   -var menuLinks = ['works.html','about.html','blog.html', 'index.html'];
                    -for (var i=0;i<4;i++)
                         li.main-menu__item: a.main-menu__link(href=menuLinks[i])=menuitems[i]
 
             .site-footer__social 
                  ul.socials.socials--footer
-                    li.socials__item: a(href="#").socials__link--vk: img(src="./img/vk.svg")
-                    li.socials__item: a(href="#").socials__link--github: img(src="./img/github.svg")
-                    li.socials__item: a(href="#").socials__link--in: img(src="./img/in.svg")
+                    li.socials__item: a(href="#").socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")
+                    li.socials__item: a(href="#").socials__link--github: svg: use(xlink:href="./img/sprite.svg#github")
+                    li.socials__item: a(href="#").socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
         .site-footer__block
             .site-footer__contacts
                 ul.contacts__list.contacts__list--footer

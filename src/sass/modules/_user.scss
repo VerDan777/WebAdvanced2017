@@ -3,7 +3,6 @@
     position: absolute;
     top:130px;
     left:50%;
-    width: 100%;
     transform: translate(-50%,-50%);
     text-align: center;
     color:white;
@@ -23,6 +22,10 @@
     }
     &--works {
        top:200px;
+    }
+
+    &--about {
+        top: 40%;
     }
     &__suptitle {
         padding-top:30px;
