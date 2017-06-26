@@ -5,6 +5,9 @@
     &--white {
         background: #faf8f0;
     }
+    &--none {
+        background: none;
+    }
     &__list {
         display: block;
         font-family: 'Roboto', sans-serif;
@@ -13,8 +16,8 @@
         float: left;
     }
     &__item {
-        // display: block;
-        padding-bottom: 40px; // display: inline-block;
+
+        padding-bottom: 40px; 
         &:hover {
             border-right: 1px solid #0548be;
             height: 40px;

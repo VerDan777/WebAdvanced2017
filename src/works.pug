@@ -29,7 +29,7 @@ body
                 .arrow-down-pic
                     img(src="./img/arrow_down.svg")
 
-     section.section.section--works.about
+     section.section.section--works.about--none
             .block__title Мои работы
             .triangle.triangle--black.triangle-left.triangle--works
                     svg.triangle__svg(viewBox="0 0 1000 150" preserveAspectRatio="none")
@@ -38,85 +38,51 @@ body
                     svg.triangle__svg(viewBox="0 0 1000 150" preserveAspectRatio="none" )
                         polygon(points="1000,0 1000,150 0,150")   
 
-            //-  .school
-            //-     section.school__site
-            //-         article.school__site__info
-            //-             h1.school__site__title Сайт школы онлайн <br> образования 
-            //-             h3.school__site__subtitle HTML, CSS, JAVASCRIPT
-            //-             a(href="http://loftschool.com" target="_blank"): button(type="button").button Посмотреть все работы
-                    
-                                    //-     section.school__preview
-                                    //-         article.school__preview-art
-                                    //-             img.school__preview-art__img(src="./img/spritephoto.png")
-                                    //-         .school__preview-case
-                                    //-             .school__preview-case--left
-                                    //-                 img(src="./img/mockup.png")
-                                    //-             .school__preview-case--right
-                                    //-                 //- img(src="./img/itloft.png")
-                                        
-                                    //- section.about: .wrapper
-                                    //-     h1.block__title.block__title--about Что обо мне <br>говорят
-                                    //-     img(src="./img/stars3.svg").star__img--about
-                                    //-     .blockquote-container
-                                    //-         mixin info(imgURL,imgsubURL,text,quote)
+            .school
+                section.school__site
+                    article.school__site__info
+                        h1.school__site__title Сайт школы онлайн <br> образования 
+                        h3.school__site__subtitle HTML, CSS, JAVASCRIPT
+                        a(href="http://loftschool.com" target="_blank"): button(type="button").button Посмотреть все работы
+                section.school__preview
 
-                                    //-             .blockquote-left
+                    article.school__preview-art
+                        img.school__preview-art__img(src="./img/spritephoto.png")
+                    .school__preview-case
+                        .school__preview-case--left
+                            img(src="./img/mockup.png")
+                        .school__preview-case--right
+                            //- img(src="./img/itloft.png")
+     section.section.form
 
-                                    //-                     img(src='./img/kdn.png', alt="").blockquote-left__img-kdn
-                                    //-                     img(src='./img/sub.png').blockquote-left__subimg
-                                    //-                     blockquote.blockquote-left__expression тот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                                    //-                     blockquote.blockquote-left__quote лучшее wokflow!
-
-
-                                    //-             .blockquote-right
-
-                                    //-                     img(src='./img/sab.png', alt="").blockquote-right__img-sab
-                                    //-                     img(src='./img/sub.png').blockquote-right__subimg
-                                    //-                     blockquote.blockquote-right__expression тот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                                    //-                     blockquote.blockquote-right__quote Верстка выдержит все
-
-                                    //-         +info('./img/kdn.png','./img/','тот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!','лучшее wokflow!')
-            //-                         //-         +info('./img/sab.png','./img/..', 'тот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!','Верстка выдержит все')
-            //- footer.site-footer
-            //-     .site-footer__block
-            //-         h2.site-footer__motto Этот сайт я сделал в рамках обучения в Школе <br>онлайн образования LoftSchool. 
-
-            //-     .site-footer__block
-            //-         nav.site-footer__menu
+     footer.site-footer
+                .site-footer__block
+                    h2.site-footer__motto Этот сайт я сделал в рамках обучения в Школе <br>онлайн образования LoftSchool. 
+                .site-footer__block
+                    nav.site-footer__menu
                 
-            //-             ul.main-menu
-            //-                -var menuitems= ['Мои работы', 'Обо мне','Блог', 'Авторизация'];
-            //-                -var menuLinks = ['works.html','about.html','blog.html', 'welcome.html'];
-            //-                -for (var i=0;i<4;i++)
-            //-                     li.main-menu__item: a.main-menu__link(href=menuLinks[i])=menuitems[i]
+                        ul.main-menu
+                            -var menuitems= ['Мои работы', 'Обо мне','Блог', 'Авторизация'];
+                            -var menuLinks = ['works.html','about.html','blog.html', 'welcome.html'];
+                            -for (var i=0;i<4;i++)
+                                li.main-menu__item: a.main-menu__link(href=menuLinks[i])=menuitems[i]
+                    .site-footer__social 
+                            ul.socials.socials--footer
+                            li.socials__item: a(href="#").socials__link--vk: img(src="./img/vk.svg")
+                            li.socials__item: a(href="#").socials__link--github: img(src="./img/github.svg")
+                            li.socials__item: a(href="#").socials__link--in: img(src="./img/in.svg")
+                .site-footer__block
+                    .site-footer__contacts
+                        ul.contacts__list.contacts__list--footer
+                            li.contacts__item.contacts__item--block deadspace290
+                            li.contacts__item.contacts__item--block vereshhagin98@mail.ru 
+                            li.contacts__item.contacts__item--block +7(952)-796-11-99
+                            li.contacts__item.contacts__item--block г. Калининград 
+                .site-footer__underfooter
+                    h1.site-footer__underfootermotto © Даниил Верещагин | с любовью LoftSchool | 2017
 
-            //-         .site-footer__social 
-            //-              ul.socials.socials--footer
-            //-                 li.socials__item: a(href="#").socials__link--vk: img(src="./img/vk.svg")
-            //-                 li.socials__item: a(href="#").socials__link--github: img(src="./img/github.svg")
-            //-                 li.socials__item: a(href="#").socials__link--in: img(src="./img/in.svg")
-            //-     .site-footer__block
-            //-         .site-footer__contacts
-            //-             ul.contacts__list.contacts__list--footer
-            //-                 li.contacts__item.contacts__item--block deadspace290
-            //-                 li.contacts__item.contacts__item--block vereshhagin98@mail.ru 
-            //-                 li.contacts__item.contacts__item--block +7(952)-796-11-99
-            //-                 li.contacts__item.contacts__item--block г. Калининград 
-
-            //-     .site-footer__underfooter
-            //-         h1.site-footer__underfootermotto © Даниил Верещагин | с любовью LoftSchool | 2017
-
-            
                     
-
-
                 
-
-
-                        
-
-                        
-                        
 
                                 
             
