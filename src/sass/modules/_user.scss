@@ -3,7 +3,7 @@
     position: absolute;
     top:130px;
     left:50%;
-    widows: 100%;
+    width: 100%;
     transform: translate(-50%,-50%);
     text-align: center;
     color:white;
@@ -20,6 +20,12 @@
         padding-bottom: 0;
 
               
+    }
+    &--works {
+       top:200px;
+    }
+    &__suptitle {
+        padding-top:30px;
     }
 
     &--blog {

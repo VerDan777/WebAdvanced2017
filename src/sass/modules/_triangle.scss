@@ -17,5 +17,12 @@
        
          fill:beige;
     }
+    &--black {
+        fill:rgba(black,0.5);
+    }
+
+    &--works {
+        height: 300px;
+    }
         
 }   

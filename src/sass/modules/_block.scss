@@ -1,18 +1,17 @@
 .block {
     position: relative;
-
     &__title {
-
-        color:#474b57;
+        color: #474b57;
         font-size: 2rem;
         text-transform: uppercase;
         text-align: center;
         position: relative;
-        font-family: 'SansusWebsimmo',sans-serif;
-        position: absolute;
-        top
+        font-family: 'SansusWebsimmo', sans-serif;
+        position: absolute; 
+         z-index: 2;
+         
+        
         // &::before {
-            
         //     content: '';
         //     position: absolute;
         //     top:30px;
@@ -20,39 +19,42 @@
         //     width: 80px;
         //     height: 15px;
         // }
-
         &--pd50 {
-            padding-top:50px;
+            padding-top: 50px;
         }
+
         &--about {
             position: absolute;
-            top:0;
-           text-align: center;
-           
-            
+            top: 0;
+            text-align: center;
         }
         &--weight {
-            font-weight:bolder;
+            font-weight: bolder;
             font-size: 2rem;
             text-transform: uppercase;
-            color:#474b57;
-            padding:0 80px;
+            color: #474b57;
+            padding: 0 80px;
             display: inline-block;
         }
-
         &--right {
             padding-bottom: 50px;
+            padding-left: 150px;
+            text-align: center;
         }
-       
+        &--works {
+            top: 90%;
+            left:50%;
+            transform: translate(-50%,-50%);
+           
+            color:white;
+        }
+        &__suptitle {
+            color: #474b57;
+            font-size: 0.5rem;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 50px 0;
+            font-family: 'SansusWebsimmo', sans-serif;
+        }
     }
-    &__suptitle {
-        color:#474b57;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        text-align: center;
-        padding:50px 0;
-        font-family: 'SansusWebsimmo',sans-serif;
-    }
-
-    
 }

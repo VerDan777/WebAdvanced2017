@@ -12,9 +12,9 @@ body
 
             .site-header__socials
                         ul.socials
-                            li.socials__item: a(href="#").socials__link--vk: img(src="./img/vk.svg")
-                            li.socials__item: a(href="#").socials__link--github: img(src="./img/github.svg")
-                            li.socials__item: a(href="#").socials__link--in: img(src="./img/in.svg")
+                            li.socials__item: a(href="#").socials__link--vk: svg: use(xlink:href="./img/sprite.svg#vk")
+                            li.socials__item: a(href="#").socials__link--github: svg: use(xlink:href="./img/sprite.svg#github")
+                            li.socials__item: a(href="#").socials__link--in: svg: use(xlink:href="./img/sprite.svg#in")
 
 
             .main-menu.site-header__menu: img(src="./img/hamburger.svg")
@@ -53,7 +53,7 @@ body
             .about-right
                 .about-right__wrapper 
                     .about-right__title
-                        .block__title.block__title--right  Чем я могу быть <br> вам полезен
+                        h2.block__title.block__title--right  Чем я могу быть <br> вам полезен
                 
                     .about-right__description
                         p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать&nbspне сложные задачи Backend. Но давайте по порядку.
@@ -91,7 +91,7 @@ body
          
                 ul.main-menu
                    -var menuitems= ['Мои работы', 'Обо мне','Блог', 'Авторизация'];
-                   -var menuLinks = ['#','#','#', '#'];
+                   -var menuLinks = ['works.html','about.html','blog.html', 'welcome.html'];
                    -for (var i=0;i<4;i++)
                         li.main-menu__item: a.main-menu__link(href=menuLinks[i])=menuitems[i]
 
@@ -103,13 +103,13 @@ body
         .site-footer__block
             .site-footer__contacts
                 ul.contacts__list.contacts__list--footer
-                    li.contacts__item.contacts__item--block skype__kdn
-                    li.contacts__item.contacts__item--block astakhov@gmail.com
+                    li.contacts__item.contacts__item--block deadspace290
+                    li.contacts__item.contacts__item--block vereshhagin98@mail.ru
                     li.contacts__item.contacts__item--block +7(952)-796-11-99
                     li.contacts__item.contacts__item--block г. Калининград 
 
         .site-footer__underfooter
-            h1.site-footer__underfootermotto © Владимир Астахов | с любовью LoftSchool | 2017
+            h1.site-footer__underfootermotto © Даниил Верещагин | с любовью LoftSchool | 2017
 
     script(src="./js/app.js")
     script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOUtmJI5ftVmlszVrGDtNiqFes2Jpi_uI&callback=initMap")
